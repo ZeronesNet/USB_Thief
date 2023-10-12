@@ -30,7 +30,7 @@ Mix_GB = int(Settings[1]) * 1048576
 print("1 ==> 提取目录下所有文件")
 print("2 ==> 键入格式名以提取特定格式的文件")
 print("3 ==> 提取目标目录以及子目录的特定文件")
-Copy_Choice = 3#int(input("请输入目标指令："))
+Copy_Choice = int(input("请输入目标指令："))
 
 if Copy_Choice == 1:
 
