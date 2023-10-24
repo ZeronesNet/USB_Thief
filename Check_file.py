@@ -35,7 +35,6 @@ def Check_file(FilesList,TargetEnd):
                 String = String + d1
             File_end.append(String)
         # 提取所有可能的后缀
-        # 提取后缀的列表# ====》["py","exe"]
         for e in File_end:
             for e1 in TargetEnd:
                 if e == e1:
